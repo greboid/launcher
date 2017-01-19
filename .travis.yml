@@ -1,0 +1,15 @@
+language: rust
+
+matrix:
+  include:
+    - env: TARGET=x86_64-pc-windows-gnu
+      dist: trusty
+      sudo: required
+      addons:
+        apt:
+          packages:
+            - gcc-mingw-w64
+
+notifications:
+  email:
+    on_success: false
