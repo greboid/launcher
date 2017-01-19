@@ -1,7 +1,9 @@
 #[cfg(windows)]
 extern crate winreg;
 
+#[cfg(windows)]
 use self::winreg::RegKey;
+#[cfg(windows)]
 use self::winreg::enums::{HKEY_LOCAL_MACHINE, KEY_READ};
 use std::path::PathBuf;
 
