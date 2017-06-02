@@ -2,6 +2,8 @@
 authors = ["Greg Holmes <git@greg.holmes.name>"]
 name = "java-launcher"
 version = "0.1.0"
+links = "jvm"
+build = "build.rs"
 
 [dependencies]
 clap = "2.20.0"
@@ -10,4 +12,7 @@ fern = "0.3.5"
 jni-sys = "0.2.2"
 log = "0.3.6"
 time = "0.1.36"
+winreg = "0.4.0"
+
+[build-dependencies]
 winreg = "0.4.0"
